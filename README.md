@@ -1,6 +1,6 @@
-<<<<<<< HEAD
 # miniracertest
 Basic test app for deploy problems with mini_racer gem
+
 =======
 # README
 
@@ -26,4 +26,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
->>>>>>> Initial commit
