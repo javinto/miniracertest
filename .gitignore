@@ -34,3 +34,5 @@
 .ruby-version
 
 /config/deploy/*
+/.ruby-gemset
+/.ruby-version
