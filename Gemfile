@@ -19,6 +19,14 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+# JS Compressor
+gem 'uglifier', '>= 4.0'
+
+# JS Evaluator
+# NOTE: 22-9-2020 mini_racer 0.3.1 leidt tot problemen met execjs. Zie: https://github.com/rubyjs/mini_racer/issues/176
+gem 'mini_racer', '0.2.14', platforms: :ruby   # Use this to replace therubyracer that does not support ES6
+gem 'execjs'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
