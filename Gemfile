@@ -24,7 +24,8 @@ gem 'uglifier', '>= 4.0'
 
 # JS Evaluator
 # NOTE: 22-9-2020 mini_racer 0.3.1 leidt tot problemen met execjs. Zie: https://github.com/rubyjs/mini_racer/issues/176
-gem 'mini_racer', platforms: :ruby   # Use this to replace therubyracer that does not support ES6
+gem 'mini_racer', '0.2.14', platforms: :ruby   # Use this to replace therubyracer that does not support ES6
+gem 'libv8', '~> 7.3'
 gem 'execjs'
 
 group :development, :test do
